@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+h1{
+  text-align: center;
+  padding-bottom: 10px;
+  }
+
+.articles{
+  background-color: #eaedf7;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+h1{ color: #522f60;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+.articles li img:hover{opacity: 0.6;}
+
+.flex-container{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.articles li{
+  flex-shrink: 0;
+  width: 280px;
+  margin-left: 80px;
+}
+
+.articles p{
+  color: #522f60;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}

@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.noticeback{background-color:  #eaedf7;}
+
+h1{ color: #522f60;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+
+.notice{text-align: center;
+        font-weight: 600;
+        line-height: 2;
+        padding-bottom: 40px;}

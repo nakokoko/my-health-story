@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+h1{ color: #522f60;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; 
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+.photos img {
+  width:400px;
+  height: auto;
+}
+
+main p {
+  padding-right: 20px;
+  max-width: 800px;
+  line-height: 1.5;
+}

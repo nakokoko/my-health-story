@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+h1{ color: #522f60;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+.feature{display: flex;
+        justify-content: space-around;}
+
+
+
+.mePhoto{
+    max-width: 100%;
+    height: auto;
+    margin-left: 10px;
+    margin-bottom: 60px;
+    
+  }
+
+table{max-width: 100%;
+      margin-right: 10px;
+      margin-bottom: 60px;
+      border-collapse: collapse;
+    }
+
+table th ,table td{ border:1px solid #522f60;
+                    }
+
+table th{font-size: 25px;
+        background-color:  #eaedf7;
+        width: 150px;}
+
+table td{max-width: 600px;
+        font-size: 20px;
+        line-height: 2;}
