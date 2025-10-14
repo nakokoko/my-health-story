@@ -11,7 +11,8 @@
     height: auto;}
 
 h1{ color: #522f60;
-    font-size: 45px;
+    font-size: 40px;
+    line-height: 1.5;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;}
