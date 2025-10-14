@@ -31,14 +31,3 @@ h1{ color: #522f60;
   padding-right: 20px;
   max-width: 800px;
   line-height: 1.5;}
-
-.backarticle {text-align: center;
-              padding-bottom: 20px;
-              text-underline-position: above;
-              text-decoration: underline;}
-
-.backarticle a{color: #522f60;
-                font-size: 25px;}
-
-.backarticle :hover{opacity: 0.7;}
-
