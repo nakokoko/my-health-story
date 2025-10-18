@@ -66,7 +66,29 @@ input[type="submit"], .submit{
 input[type="submit"]:hover{opacity: 0.5;}
 
 @media screen and (max-width: 1030px) {
+.info {
+    flex-direction: column; /* ← イラストとフォームを縦並び */
+    align-items: center;    /* ← 中央寄せ */
+    padding: 0 20px;        /* ← 左右に20pxの余白 */
+  }
 
-.illust{width: 80%;}
+  .illust {
+    width: 100%;
+    max-width: 400px;       /* ← 大きすぎないように調整 */
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .form {
+    width: 100%;
+    padding: 0 20px;        /* ← フォームも左右に余白を確保 */
+    box-sizing: border-box; /* ← 幅の計算を安定化 */
+  }
+
+  .textfield,
+  .textarea {
+    width: 100%;            /* ← 画面幅いっぱいでもはみ出さない */
+    max-width: 100%;
+  }
 
 }
