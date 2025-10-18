@@ -31,3 +31,28 @@ main p {
 .heven{
   font-size: 18px;
   text-align: center;}
+
+
+@media screen and (max-width: 1030px) {
+
+  h1{font-size: 25px;}
+
+  .container {
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+main img {
+  width:100%;
+  height: auto;
+  display: block;
+}
+
+main p {font-size: 16px;}
+
+.heven{
+  font-size: 13px;
+  text-align: center;}
+
+}

@@ -9,7 +9,19 @@ h1{ color: #522f60;
     margin-bottom: 50px;
   }
 
-.notice{text-align: center;
+.notice{text-align: left;
         font-weight: 600;
         line-height: 2;
         padding-bottom: 40px;}
+
+
+@media screen and (max-width: 1030px) {
+
+h1{font-size: 30px;}
+
+.notice{font-size: 16px;
+        margin-right: 5%;
+        margin-left: 5%;
+}
+
+}

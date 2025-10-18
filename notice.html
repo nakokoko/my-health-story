@@ -6,12 +6,19 @@
 <title>Notice</title>
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/notice.css">
-</head>
+<meta name="viewport" content="width=device-width">
 </head>
 
 <body>
   <header>
-    <a href="index.html"><img src="image/logo2.png" width="300" height="150" alt="脳と相談中！"></a>
+     <div class="header-inner">
+    <a href="index.html"><img src="image/logo2.png" width="300" height="150" alt="脳と相談中！"class="header-logo"></a>
+
+<button class="toggle-menu-button">
+    </button>
+
+   </div>
+
     <nav class="site-menu">
       <ul>
         <li><a href="profile.html">自己紹介</a></li>
@@ -29,20 +36,21 @@
 
 <h1>利用規約・注意事項</h1>
 <p class="notice">1. 誹謗中傷・迷惑行為について<br>
- 当サイトや筆者、その他第三者への誹謗中傷・嫌がらせ行為はご遠慮ください。<br>
-  悪質な書き込みや迷惑行為があった場合、必要に応じて法的措置や開示請求を行う可能性があります。<br>
+　当サイトや筆者、その他第三者への誹謗中傷・嫌がらせ行為はご遠慮ください。<br>
+　悪質な書き込みや迷惑行為があった場合、必要に応じて法的措置や開示請求を行う可能性があります。<br>
 <br>
 2. 個人特定の禁止<br>
- 筆者の個人情報（氏名、住所、勤務先など）を特定する行為や、それを公開することは固くお断りいたします。<br>
+　筆者の個人情報（氏名、住所、勤務先など）を特定する行為や、それを公開することは固くお断りいたします。<br>
 <br>
 3. 著作権・コンテンツの利用について<br>
- 当サイトに掲載している文章・画像・イラストはすべて筆者のオリジナル作品です。無断での転載・複製・二次利用は禁止します。<br>
+　当サイトに掲載している文章・画像・イラストはすべて筆者のオリジナル作品です。無断での転載・複製・二次利用は禁止します。<br>
 <br>
 4. 免責事項<br>
- 当サイトの内容は筆者の体験・考えに基づくものであり、必ずしもすべての方に当てはまるものではありません。<br>
- 本サイトの利用によって生じたいかなる損害についても、筆者は一切の責任を負いません。</p>
+　当サイトの内容は筆者の体験・考えに基づくものであり、必ずしもすべての方に当てはまるものではありません。<br>
+　本サイトの利用によって生じたいかなる損害についても、筆者は一切の責任を負いません。</p>
 
  </div>
+
   </main>
 
 
@@ -52,5 +60,13 @@
   </footer>
 </body>
 
+<script>
+  const toggleButton = document.querySelector('.toggle-menu-button');
+  const siteMenu = document.querySelector('.site-menu');
+
+  toggleButton.addEventListener('click', () => {
+    siteMenu.classList.toggle('active');
+  });
+</script>
 
 </html>

@@ -16,7 +16,6 @@ h1{ color: #522f60;
 }
 
 .photos {
-  padding-left: 20px;
   display: flex;
   flex-direction: column; 
   gap: 20px; 
@@ -28,6 +27,20 @@ h1{ color: #522f60;
   height: auto;}
 
 .text {
-  padding-right: 20px;
   max-width: 800px;
   line-height: 1.5;}
+
+
+@media screen and (max-width: 1030px) {
+
+  h1{font-size: 25px;}
+
+  .text {font-size: 16px;}
+
+  .container {
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+}

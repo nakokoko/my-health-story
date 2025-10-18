@@ -16,7 +16,7 @@ h1{ color: #522f60;
 }
 
 .photos {
-  padding-left: 20px;
+  
   display: flex;
   flex-direction: column; 
   max-width: 600px;
@@ -28,7 +28,30 @@ h1{ color: #522f60;
 }
 
 .text {
-  padding-right: 20px;
   max-width: 800px;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 1030px) {
+
+  h1{font-size: 25px;}
+
+  .container {
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+main img {
+  width:100%;
+  height: auto;
+  display: block;
+}
+
+main p {font-size: 16px;}
+
+.heven{
+  font-size: 13px;
+  text-align: center;}
+
 }

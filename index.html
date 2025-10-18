@@ -6,12 +6,19 @@
 <title>Nou to Sodantyu !</title>
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/index.css">
+<meta name="viewport" content="width=device-width">
 </head>
 
 <body>
 
   <header>
-    <a href="index.html"><img src="image/logo2.png" width="300" height="150" alt="脳と相談中！"></a>
+    <div class="header-inner">
+    <a href="index.html"><img src="image/logo2.png" width="300" height="150" alt="脳と相談中！" class="header-logo"></a>
+    
+    <button class="toggle-menu-button">
+    </button>
+    
+    </div>
     <nav class="site-menu">
       <ul>
         <li><a href="profile.html">自己紹介</a></li>
@@ -29,15 +36,13 @@
       
     <img class="title" src="image/index.png" width="1200" height="600" alt="26歳で脳のガンが見つかった私の体験記">
     <h1>閲覧される方へのご案内</h1>
-    <p class="atention">「脳と相談中！２６歳で脳のガンが見つかった私の体験記」は<br>
-      神経膠腫を患った筆者自身の闘病の記録をまとめたものです。<br>
-      同じような状況の方や、困っている方の参考になればと思い、公開しています。<br><br>
-      記事の中には、闘病中の写真や記録の一部に傷口や治療の様子など<br>
-      見る方によっては不快に感じられる表現が含まれる場合があります。<br>
-      閲覧はすべてご自身の判断と責任でお願いいたします。<br><br>
-      また、本サイトの内容はあくまで筆者個人の体験に基づくものであり、必ずしも正しい治療法や医学的根拠を保証するものではありません。<br>
-      治療や体調に関する判断は、必ず医師などの専門家にご相談ください。<br><br>
-      なお、本サイトの利用に関するお願いや免責事項については、利用規約ページをご覧ください。</p>
+    <p class="atention">　「脳と相談中！２６歳で脳のガンが見つかった私の体験記」は神経膠腫を患った筆者自身の闘病の記録をまとめたものです。<br>
+     　 同じような状況の方や、困っている方の参考になればと思い、公開しています。<br><br>
+      　記事の中には、闘病中の写真や記録の一部に傷口や治療の様子など見る方によっては不快に感じられる表現が含まれる場合があります。<br>
+      　閲覧はすべてご自身の判断と責任でお願いいたします。<br><br>
+      　また、本サイトの内容はあくまで筆者個人の体験に基づくものであり、必ずしも正しい治療法や医学的根拠を保証するものではありません。<br>
+      　治療や体調に関する判断は、必ず医師などの専門家にご相談ください。<br><br>
+      　なお、本サイトの利用に関するお願いや免責事項については、利用規約ページをご覧ください。</p>
 
       </div>
   </main>
@@ -49,5 +54,13 @@
   </footer>
 </body>
 
+<script>
+  const toggleButton = document.querySelector('.toggle-menu-button');
+  const siteMenu = document.querySelector('.site-menu');
+
+  toggleButton.addEventListener('click', () => {
+    siteMenu.classList.toggle('active');
+  });
+</script>
 
 </html>

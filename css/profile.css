@@ -35,3 +35,33 @@ table th{font-size: 25px;
 table td{max-width: 600px;
         font-size: 20px;
         line-height: 2;}
+
+@media screen and (max-width: 1030px) {
+
+.feature {
+    flex-direction: column; /* ← 横並び→縦並び */
+    align-items: center; /* 中央寄せ */
+  }
+
+  .mePhoto {
+    width: 80%; /* 画面に合わせて広く */
+    max-width: none;
+    margin-bottom: 40px;
+  }
+
+  .profile-table-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    overflow-x: auto;      /* ← 横スクロールを許可 */
+    -webkit-overflow-scrolling: touch; /* ← スムーズにスクロール */
+  }
+
+.profile-table-wrapper table {
+  margin-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+    min-width: 750px; 
+    width: auto;      /* 横スクロールになるように */
+  }
+
+}

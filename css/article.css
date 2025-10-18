@@ -37,3 +37,24 @@ h1{ color: #522f60;
   margin-top: 5px;
   margin-bottom: 40px;
 }
+
+@media screen and (max-width: 1030px) {
+
+  .flex-container {
+    flex-direction: column; /* ← 親に指定！ */
+    align-items: center;    /* ← 子(li)を中央寄せ */
+  }
+
+  .articles li {
+    margin: 0 auto 40px;    /* ← 左右中央寄せ */
+    width: 90%;            /* ← 画面幅に合わせると綺麗 */
+  
+  }
+
+  .articles li img {
+    display: block;
+    margin: 0 auto;      /* 画像を中央に配置 */
+  }
+
+
+}

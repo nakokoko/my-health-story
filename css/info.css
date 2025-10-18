@@ -45,7 +45,7 @@ h1{ color: #522f60;
           }
 
 
-input[type="submit"], button, .submit{
+input[type="submit"], .submit{
   margin-top: 20px;
   margin-bottom: 20px;
   display: inline-block;
@@ -64,3 +64,9 @@ input[type="submit"], button, .submit{
 }
 
 input[type="submit"]:hover{opacity: 0.5;}
+
+@media screen and (max-width: 1030px) {
+
+.illust{width: 80%;}
+
+}

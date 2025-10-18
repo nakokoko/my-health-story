@@ -34,7 +34,11 @@ header{
   padding:0  10px 0 10px;
 }
 
+.toggle-menu-button{display: none;}
+
 img{max-width: 100%;}
+
+.hamburger{display: none;}
 
 .site-menu ul{
   display: flex;
@@ -66,3 +70,76 @@ footer{
 
 .backarticle :hover{opacity: 0.7;}
 
+@media(max-width:1030px){
+  header {
+    position: relative;
+     display: block;
+  }
+
+  .header-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* ロゴとハンバーガーを左右に配置 */
+    align-items: center;            /* 縦方向の中央揃え */
+    height: 100%;
+    padding: 0 5%;
+    padding: 0 clamp(10px, 8vw, 80px);
+  }
+
+  .header-logo {
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+
+  }
+
+  /* ハンバーガーアイコン */
+  .toggle-menu-button {
+    margin-left: auto;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../image/hamburger.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* メニューは最初非表示 */
+  .site-menu {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: #7058a3;
+    opacity: 0.8;
+    padding: 30px 0 50px;
+    text-align: center;
+    z-index: 5;
+  }
+
+  .site-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .site-menu ul li a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .site-menu ul li a:hover {
+    opacity: 0.7;
+  }
+
+  /* JavaScriptで .active が付いたら開く */
+  .site-menu.active {
+    display: block;
+  }
+}

@@ -6,11 +6,20 @@
 <title>Profile</title>
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/profile.css">
+<meta name="viewport" content="width=device-width">
 </head>
 
 <body>
+
   <header>
-    <a href="index.html"><img src="image/logo2.png" width="300" height="150" alt="脳と相談中！"></a>
+    <div class="header-inner">
+    <a href="index.html"><img src="image/logo2.png" width="300" height="150" alt="脳と相談中！" class="header-logo"></a>
+
+    <button class="toggle-menu-button">
+    </button>
+
+    </div>
+
     <nav class="site-menu">
       <ul>
         <li><a href="profile.html">自己紹介</a></li>
@@ -29,7 +38,7 @@
 
         <img class="mePhoto" src="image/Profile.png" width=384  height="512" alt="プロフィール写真">
        
-        
+       <div class="profile-table-wrapper">
         <table>
           <tr>
             <th scope="row">名前</th>
@@ -62,12 +71,7 @@
           </tr>
          
         </table>
-
-
-
-
-
-
+</div> 
 
         </div>
 
@@ -78,7 +82,16 @@
   
     <p>&copy; Nou to Sodantyu !</p>
   </footer>
+  
 </body>
 
+<script>
+  const toggleButton = document.querySelector('.toggle-menu-button');
+  const siteMenu = document.querySelector('.site-menu');
+
+  toggleButton.addEventListener('click', () => {
+    siteMenu.classList.toggle('active');
+  });
+</script>
 
 </html>

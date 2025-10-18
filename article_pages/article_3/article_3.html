@@ -6,11 +6,19 @@
 <title>Article_03</title>
 <link rel="stylesheet" href="../../css/common.css">
 <link rel="stylesheet" href="../article_2_2/article_2_2.css">
+<meta name="viewport" content="width=device-width">
 </head>
 
 <body>
   <header>
-    <a href="../../index.html"><img src="../../image/logo2.png" width="300" height="150" alt="脳と相談中！"></a>
+    <div class="header-inner">
+    <a href="../../index.html"><img src="../../image/logo2.png" width="300" height="150" alt="脳と相談中！" class="header-logo"></a>
+
+    <button class="toggle-menu-button">
+    </button>
+
+    </div>
+
     <nav class="site-menu">
       <ul>
         <li><a href="../../profile.html">自己紹介</a></li>
@@ -55,5 +63,13 @@
   </footer>
 </body>
 
+<script>
+  const toggleButton = document.querySelector('.toggle-menu-button');
+  const siteMenu = document.querySelector('.site-menu');
+
+  toggleButton.addEventListener('click', () => {
+    siteMenu.classList.toggle('active');
+  });
+</script>
 
 </html>
