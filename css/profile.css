@@ -49,6 +49,7 @@ table td{max-width: 600px;
     margin-bottom: 40px;
   }
 
+
   .profile-table-wrapper {
     width: 100%;
     margin-bottom: 20px;
@@ -60,8 +61,16 @@ table td{max-width: 600px;
   margin-bottom: 20px;
   margin-left: 5%;
   margin-right: 5%;
-    min-width: 750px; 
+    min-width: 620px; 
     width: auto;      /* 横スクロールになるように */
   }
+
+table th{font-size: 20px;
+        background-color:  #eaedf7;
+        width: 150px;}
+
+table td{max-width: 600px;
+        font-size: 16px;
+        line-height: 2;}
 
 }
