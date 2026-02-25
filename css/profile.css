@@ -36,6 +36,8 @@ table td{max-width: 600px;
         font-size: 20px;
         line-height: 2;}
 
+.sns :hover{opacity: 0.7;}
+
 @media screen and (max-width: 1030px) {
 
 .feature {
