@@ -10,6 +10,13 @@ h1{ color: #522f60;
     margin-bottom: 50px;
   }
 
+h2{ color: #522f60;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+
 .notice{display: block;
         text-align: left;
         font-weight: 600;
